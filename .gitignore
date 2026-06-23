@@ -1,0 +1,20 @@
+# Local preview artifacts
+preview*.png
+*.log
+
+# Python local cache
+__pycache__/
+*.pyc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local environment
+.env
+.env.*
+
+# Cloudflare local dev
+.wrangler/
