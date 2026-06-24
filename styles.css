@@ -20,9 +20,10 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 18% 10%, rgba(191,234,82,.14), transparent 24rem),
-    radial-gradient(circle at 82% 6%, rgba(239,195,148,.12), transparent 28rem),
-    linear-gradient(180deg, #050608 0%, #090b10 48%, #06070a 100%);
+    radial-gradient(circle at 12% 12%, rgba(78,160,255,.18), transparent 30rem),
+    radial-gradient(circle at 88% 2%, rgba(191,234,82,.15), transparent 32rem),
+    radial-gradient(circle at 78% 72%, rgba(239,195,148,.12), transparent 30rem),
+    linear-gradient(145deg, #020408 0%, #07101b 42%, #090806 72%, #030405 100%);
   color: var(--text);
   letter-spacing: .025em;
   line-height: 1.72;
@@ -37,11 +38,13 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
-  background-size: 68px 68px;
-  mask-image: linear-gradient(to bottom, black, transparent 76%);
-  opacity: .38;
+    linear-gradient(112deg, transparent 0 35%, rgba(78,160,255,.075) 35.2% 35.8%, transparent 36% 100%),
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.038) 1px, transparent 1px),
+    radial-gradient(circle at 50% 0%, rgba(191,234,82,.09), transparent 44rem);
+  background-size: 280px 280px, 72px 72px, 72px 72px, 100% 100%;
+  mask-image: linear-gradient(to bottom, black, rgba(0,0,0,.9) 48%, transparent 88%);
+  opacity: .52;
   z-index: -2;
 }
 .page-shell::after {
@@ -56,6 +59,7 @@ a { color: inherit; text-decoration: none; }
   transform: rotate(-8deg);
   pointer-events: none;
   z-index: -1;
+  text-shadow: 0 0 80px rgba(191,234,82,.08);
 }
 
 .site-header {
@@ -124,18 +128,21 @@ a { color: inherit; text-decoration: none; }
   border-radius: 38px;
   padding: 82px 56px 58px;
   background:
-    radial-gradient(circle at 70% 25%, rgba(191,234,82,.16), transparent 25rem),
-    radial-gradient(circle at 42% 34%, rgba(239,195,148,.15), transparent 20rem),
-    linear-gradient(135deg, rgba(13,17,26,.96), rgba(5,6,8,.98));
+    radial-gradient(circle at 72% 22%, rgba(78,160,255,.2), transparent 26rem),
+    radial-gradient(circle at 34% 18%, rgba(191,234,82,.13), transparent 24rem),
+    radial-gradient(circle at 58% 68%, rgba(239,195,148,.13), transparent 24rem),
+    linear-gradient(135deg, rgba(8,13,22,.97), rgba(5,6,8,.98) 58%, rgba(12,10,4,.96));
   box-shadow: var(--shadow);
 }
 .hero-grid-bg {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(115deg, transparent 0%, rgba(239,195,148,.09) 38%, transparent 39%),
-    repeating-linear-gradient(120deg, rgba(255,255,255,.045) 0 1px, transparent 1px 54px);
-  opacity: .55;
+    linear-gradient(118deg, transparent 0%, rgba(78,160,255,.1) 34%, transparent 35%),
+    linear-gradient(64deg, transparent 0%, rgba(191,234,82,.07) 58%, transparent 59%),
+    repeating-linear-gradient(120deg, rgba(255,255,255,.045) 0 1px, transparent 1px 54px),
+    repeating-linear-gradient(0deg, rgba(191,234,82,.026) 0 1px, transparent 1px 9px);
+  opacity: .66;
   pointer-events: none;
 }
 .ticker-strip {
